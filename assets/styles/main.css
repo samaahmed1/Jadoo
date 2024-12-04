@@ -3,6 +3,21 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --charleston-green: #212832;
+  --jelly-bean: #df6951;
+  --space-cadet: #181e4b;
+  --dark-electric-blue: #5e6282;
+  --orange-web: #f1a501;
+  --yankees-blue: #14183e;
+  --blue-sapphire: #006380;
+  --medium-purple: #8a79df;
+  --roman-silver: #84829a;
+  --manatee: #9ca0b0;
+  --iris: #4152ca;
+}
 a {
   text-decoration: none;
 }
