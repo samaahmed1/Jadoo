@@ -43,3 +43,70 @@ img {
     width: 1170px;
   }
 }
+header {
+  padding: 47px 0;
+}
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container nav input {
+  appearance: none;
+}
+header .container nav label img {
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  header .container nav {
+    position: relative;
+  }
+  header .container nav ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: var(--white);
+  }
+  header .container nav ul li{
+    border-bottom: 1px solid var(--charleston-green);
+    padding: 10px 15px;
+  }
+  header .container nav input:checked + ul {
+    display: block;
+  }
+}
+header .container nav ul li {
+  list-style: none;
+}
+@media (min-width: 992px) {
+  header .container nav ul {
+    display: flex;
+    align-items: center;
+  }
+  header .container nav ul li {
+    padding: 0 20px;
+  }
+  header .container nav label
+   , header .container nav input {
+    display: none;
+  }
+}
+header .container nav ul li a {
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21.62px;
+  color: var(--black);
+}
+header .container nav ul li .sign-up {
+  border: 1px solid var(--charleston-green);
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+header .container nav ul li select {
+  border: none;
+  background-color: transparent;
+  outline: none;
+}
+
