@@ -24,6 +24,27 @@ a {
 img {
   max-width: 100%;
 }
+.text-primary {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 64.5px;
+  color: var(--yankees-blue);
+}
+.text-secondary {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--dark-electric-blue);
+}
+.text-muted {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--dark-electric-blue);
+}
 .container {
   padding: 0 15px;
   margin: auto;
@@ -150,13 +171,6 @@ header .container nav ul li select {
   background-image: url(../images/Decore.png);
   height: 10px;
   width: calc(100% + 90px);
-}
-.hero .container .information p {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 30px;
-  color: var(--dark-electric-blue);
 }
 .hero .container .information .option {
   display: flex;
