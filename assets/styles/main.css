@@ -94,7 +94,7 @@ header .container nav ul li {
 }
 header .container nav ul li a {
   font-family: "Open Sans", serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 17px;
   line-height: 21.62px;
   color: var(--black);
@@ -109,4 +109,93 @@ header .container nav ul li select {
   background-color: transparent;
   outline: none;
 }
+.hero .container {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 992px) {
+  .hero .container .information {
+    width: 50%;
+  }
+}
+@media (max-width: 991px) {
+  .hero .container .image {
+    display: none;
+  }
+}
+.hero .container .information .message {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--jelly-bean);
+
+}
+.hero .container .information h1 {
+  font-family: "Volkhov", serif;
+  font-weight: 700;
+  font-size: 65px;
+  letter-spacing: -4%;
+  color: var(--space-cadet);
+  margin: 20px 0;
+}
+.hero .container .information h1 .enjoy {
+  position: relative;
+}
+.hero .container .information h1 .enjoy::after {
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: -40px;
+  z-index: -1;
+  background-image: url(../images/Decore.png);
+  height: 10px;
+  width: calc(100% + 90px);
+}
+.hero .container .information p {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--dark-electric-blue);
+}
+.hero .container .information .option {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 25px;
+}
+.hero .container .information .option .find-out {
+  font-family: "Open Sans", serif;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--orange-web);
+  color: var(--white);
+  padding: 15px;
+}
+.hero .container .information .option .demo {
+  display: flex;
+  align-items: center;
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--dark-electric-blue);
+}
+.hero .container .information .option .demo img {
+  background-color: var(--jelly-bean);
+  padding: 18px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+.hero .container .image .blob {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+
+
 
