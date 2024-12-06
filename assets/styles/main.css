@@ -208,6 +208,60 @@ header .container nav ul li select {
   right: 0;
   z-index: -1;
 }
+.category{
+  position: relative;
+  padding: 100px 0;
+}
+.category .container .text-muted 
+,.category .container .text-primary {
+  display: block;
+  text-align: center;
+}
+.category .container .category-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  align-items: center;
+  gap: 50px;
+  margin-top: 50px;
+  text-align: center;
+}
+.category .container .category-items .item h3 {
+  font-family: "Open Sans", serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27.24px;
+  color: var(--yankees-blue);
+  margin: 10px 0;
+}
+.category .container .category-items .item:nth-child(2) {
+  position: relative;
+ background-color: var(--white);
+ border-radius: 36px;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, .06);
+}
+.category .container .category-items .item:nth-child(2)::after {
+  position: absolute;
+  content: "";
+  bottom: -35px;
+  left: -30px;
+  background-image: url(../images/Rectangle\ 157.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100px;
+  z-index: -1;
+}
+.category .container .category-items .plus {
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+@media (max-width: 991px) {
+  .category .container .category-items .plus {
+    display: none;
+  }
+}
+
+
 
 
 
