@@ -17,6 +17,7 @@
   --roman-silver: #84829a;
   --manatee: #9ca0b0;
   --iris: #4152ca;
+  --gray: #F5F5F5;
 }
 a {
   text-decoration: none;
@@ -27,7 +28,7 @@ img {
 .text-primary {
   font-family: "Volkhov", serif;
   font-weight: 700;
-  font-size: 50px;
+  font-size: 47px;
   line-height: 64.5px;
   color: var(--yankees-blue);
 }
@@ -44,6 +45,18 @@ img {
   font-size: 18px;
   line-height: 27px;
   color: var(--dark-electric-blue);
+}
+.custom {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--dark-electric-blue);
+}
+.main-text {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-size: 19px;
+  color: var(--yankees-blue);
 }
 .container {
   padding: 0 15px;
@@ -300,18 +313,109 @@ header .container nav ul li select {
   display: flex;
   justify-content: space-between;
 }
-.top-selling .container .category-items .item .item-text .custom {
-  font-family: "Poppins", serif;
-  font-weight: 500;
-  font-size: 15px;
-  color: var(--dark-electric-blue);
-}
 .top-selling .container .category-items .item .item-text p {
   display: flex;
   align-items: center;
   gap: 10px;
   margin-top: 10px;
 }
+.easy-and-fast .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .easy-and-fast .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+.easy-and-fast .container .info {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.easy-and-fast .container .details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.easy-and-fast .container .details .icon1{
+  background-color: var(--orange-web);
+  padding: 10px ;
+  border-radius: 13px;
+}
+.easy-and-fast .container .details .icon2{
+  background-color: var(--jelly-bean);
+  padding: 10px ;
+  border-radius: 13px;
+}
+.easy-and-fast .container .details .icon3{
+  background-color: var(--blue-sapphire);
+  padding: 10px ;
+  border-radius: 13px;
+}
+.easy-and-fast .container .details .text h3{
+  font-weight: 700;
+}
+.easy-and-fast .container .image {
+  position: relative;
+}
+.easy-and-fast .container .image .main-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .06);
+  border-radius: 26px;
+  padding: 25px;
+}
+.easy-and-fast .container .image .main-card .icons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.easy-and-fast .container .image .main-card .icons span {
+ background-color: var(--gray);
+ padding: 10px;
+ border-radius: 50px;
+}
+.easy-and-fast .container .image .mini-card {
+  position: absolute;
+  bottom: 60px;
+  right: -60px;
+  display: flex;
+  gap: 20px;
+  background-color: var(--white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .06);
+  border-radius: 26px;
+  width: 250px;
+  padding: 10px;
+}
+.easy-and-fast .container .image .mini-card .image img {
+  border-radius: 50px;
+}
+.easy-and-fast .container .image .mini-card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.easy-and-fast .container .image .mini-card .info p span {
+  color: var(--medium-purple);
+}
+.easy-and-fast .container .image .mini-card .info .progress-bar {
+  height: 5px;
+  background-color: var(--gray);
+}
+.easy-and-fast .container .image .mini-card .info .progress {
+  height: 5px;
+  background-color: var(--medium-purple);
+  width: 40%;
+}
+
+
 
 
 
