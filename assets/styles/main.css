@@ -470,6 +470,12 @@ header .container nav ul li select {
     right: -40px;
   }
 }
+.companies .container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill , minmax(210px, 1fr));
+  gap: 20px;
+}
 
 
 
