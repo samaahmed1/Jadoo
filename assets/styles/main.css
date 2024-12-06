@@ -534,6 +534,35 @@ header .container nav ul li select {
   padding: 18px 30px;
   border-radius: 10px;
 }
+footer .footer-navbar .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+footer .footer-navbar .container .footer-nav-link{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+footer .footer-navbar .container li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+footer .footer-navbar .container li a {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: var(--dark-electric-blue);
+}
+footer .footer-navbar .container .discover .custom {
+  margin: 10px 0;
+  font-size: 20px;
+  text-align: center;
+}
+footer .copyright .container .custom {
+  margin: 35px 0;
+  text-align: center;
+}
 
 
 
