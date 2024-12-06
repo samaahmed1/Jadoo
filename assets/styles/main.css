@@ -414,7 +414,62 @@ header .container nav ul li select {
   background-color: var(--medium-purple);
   width: 40%;
 }
-
+.testimonials {
+  padding: 100px 0;
+}
+.testimonials .container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media (max-width: 991px) {
+  .testimonials .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+  }
+}
+.testimonials .container .info img {
+  margin-top: 50px;
+}
+.testimonials .container .image .main-card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: var(--white);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, .06);
+  border-radius: 26px;
+  padding: 25px;
+  position: relative;
+}
+.testimonials .container .image .main-card .mike-taylor {
+  position: absolute;
+  left: -50px;
+  top: 0;
+}
+.testimonials .container .image .mini-card {
+  border: 2px solid var(--gray) ;
+  border-radius: 26px;
+  padding: 25px;
+  position: relative;
+  right: -20px;
+  top: -20px;
+  z-index: -1;
+}
+.testimonials .container .image .Pagination {
+  display: none;
+}
+@media (min-width: 992px) {
+  .testimonials .container .image {
+    position: relative;
+  }
+  .testimonials .container .image .Pagination {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: -40px;
+  }
+}
 
 
 
