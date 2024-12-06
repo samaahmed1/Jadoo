@@ -18,6 +18,8 @@
   --manatee: #9ca0b0;
   --iris: #4152ca;
   --gray: #F5F5F5;
+  --baby-purple: #dfd7f944;
+
 }
 a {
   text-decoration: none;
@@ -475,6 +477,62 @@ header .container nav ul li select {
   align-items: center;
   grid-template-columns: repeat(auto-fill , minmax(210px, 1fr));
   gap: 20px;
+}
+.subscribe {
+  padding: 100px 0;
+}
+.subscribe .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  border-radius: 129px 20px 20px 20px ;
+  gap: 50px;
+  background: var(--baby-purple) url(../images/Group\ 42.png) no-repeat ;
+}
+@media (max-width: 992px) {
+  .subscribe .container {
+    background-color: var(--baby-purple);
+    background-image: none;
+  }
+}
+.subscribe .container .send {
+  background-color: var(--iris);
+  border-radius: 50px;
+  padding: 7px;
+  position: absolute;
+  top: -20px;
+  right: 0;
+}
+.subscribe .container .text-muted {
+  font-size: 27px;
+  text-align: center;
+  line-height: 50px;
+}
+.subscribe .container form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.subscribe .container form input[type="email"] {
+ border: none;
+ outline: none;
+ background-color: var(--white);
+ padding: 20px;
+ width: 350px;
+ border-radius: 10px;
+ color: var(--black);
+}
+.subscribe .container form input[type="submit"] {
+  background-color: var(--jelly-bean);
+  border: none;
+  outline: none;
+  color: var(--white);
+  padding: 18px 30px;
+  border-radius: 10px;
 }
 
 
